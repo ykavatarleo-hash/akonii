@@ -37,5 +37,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add state.json
-          git diff --staged --quiet || git commit -m "Update member count state"
-          git push
+       git diff --staged --quiet || git commit -m "Update member count state"
+   git pull --rebase origin main
+   git push
